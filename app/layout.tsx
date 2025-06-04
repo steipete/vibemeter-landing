@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
+import Header from "@/components/header" // Import the new Header component
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -10,9 +11,9 @@ export const metadata: Metadata = {
   title: "Vibe Meter - Monitor Your Cursor AI Spending",
   description: "Vibe Meter puts your AI spend on the macOS menu bar—real-time, multi-currency, no surprises.",
   icons: {
-    icon: "/vibemeter-app-icon.png", // Assuming this is your main app icon
+    icon: "/vibemeter-app-icon.png",
   },
-    generator: 'v0.dev'
+  generator: "v0.dev",
 }
 
 export default function RootLayout({
@@ -24,6 +25,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className} antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
+          <Header /> {/* Add the Header component here */}
           {children}
         </ThemeProvider>
       </body>
