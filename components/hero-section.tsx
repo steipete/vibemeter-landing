@@ -19,10 +19,12 @@ export default function HeroSection() {
             className="mx-auto mb-6 rounded-2xl shadow-xl"
           />
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight hero-gradient-text">Vibe Meter</h1>
-          <p className="mt-6 text-xl md:text-2xl text-slate-300 max-w-2xl mx-auto">Monitor Your Cursor AI Spending.</p>
+          <p className="mt-6 text-xl md:text-2xl text-slate-300 max-w-2xl mx-auto">
+            Monitor Your Cursor AI Spending right from your menu bar.
+          </p>
         </div>
 
-        <div className="relative max-w-2xl mx-auto mb-12 md:mb-16">
+        <div className="relative max-w-xs mx-auto mb-12 md:mb-16">
           {" "}
           {/* Reduced max-width here */}
           <div className="absolute -inset-2 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-xl blur-xl opacity-30 group-hover:opacity-50 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
