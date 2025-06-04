@@ -22,14 +22,16 @@ export default function HeroSection() {
           <p className="mt-6 text-xl md:text-2xl text-slate-300 max-w-2xl mx-auto">Monitor Your Cursor AI Spending.</p>
         </div>
 
-        <div className="relative max-w-3xl mx-auto mb-12 md:mb-16">
+        <div className="relative max-w-2xl mx-auto mb-12 md:mb-16">
+          {" "}
+          {/* Reduced max-width here */}
           <div className="absolute -inset-2 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-xl blur-xl opacity-30 group-hover:opacity-50 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
           <Image
             src="/vibemeter-main-ui.png"
             alt="Vibe Meter Main UI Screenshot"
-            width={1024}
-            height={768}
-            className="rounded-lg shadow-2xl relative z-10 border border-slate-700"
+            width={1024} // Original width, Tailwind's max-w will control display size
+            height={768} // Original height
+            className="rounded-lg shadow-2xl relative z-10" // Removed border classes
             priority
           />
         </div>
