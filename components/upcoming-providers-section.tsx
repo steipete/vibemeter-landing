@@ -26,7 +26,7 @@ export default function UpcomingProvidersSection() {
 
         {/* Buttondown Newsletter Form */}
         <form
-          action="https://buttondown.email/api/emails/embed-subscribe/steipete?tag=vibemeter"
+          action="https://buttondown.email/api/emails/embed-subscribe/steipete"
           method="post"
           target="popupwindow"
           className="flex flex-col w-fit mx-auto sm:flex-row gap-3 items-center py-3"
