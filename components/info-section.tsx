@@ -36,7 +36,7 @@ export default function InfoSection() {
               alt="Vibe Meter Providers Settings"
               width={1024}
               height={768}
-              className="rounded-lg shadow-xl relative z-10 border border-slate-700"
+              className="rounded-lg shadow-xl relative z-10"
             />
           </div>
         </div>

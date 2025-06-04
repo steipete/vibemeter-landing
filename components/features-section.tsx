@@ -11,6 +11,7 @@ import {
   MousePointerIcon as MousePointerSquare,
   Table2,
   Sparkles,
+  Heart,
 } from "lucide-react"
 import type { LucideIcon } from "lucide-react"
 
@@ -87,6 +88,12 @@ const features: Feature[] = [
     title: "Free & Open Source",
     description: "Totally free, code on GitHub.",
     colorClass: "text-yellow-400",
+  },
+  {
+    icon: Heart, // New feature
+    title: "Made with Love",
+    description: "Crafted with care for the Mac community.",
+    colorClass: "text-red-400", // Warm color for the heart
   },
 ]
 
