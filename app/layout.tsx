@@ -4,6 +4,8 @@ import { Inter } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import Header from "@/components/header" // Import the new Header component
+import { Analytics } from "@vercel/analytics/next" // Added Vercel Analytics import
+import { Suspense } from "react"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -26,7 +28,8 @@ export default function RootLayout({
       <body className={`${inter.className} antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
           <Header /> {/* Add the Header component here */}
-          {children}
+          <Suspense>{children}</Suspense>
+          <Analytics /> {/* Added Vercel Analytics component */}
         </ThemeProvider>
       </body>
     </html>
