@@ -10,7 +10,7 @@
     --card-foreground: 210 40% 98%;
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
-    --primary: 217.2 91.2% 59.8%;
+    --primary: 217.2 91.2% 59.8%; /* Default primary blue from shadcn */
     --primary-foreground: 222.2 47.4% 11.2%;
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
@@ -22,30 +22,35 @@
     --destructive-foreground: 210 40% 98%;
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 224.3 76.3% 48%;
+    --ring: 224.3 76.3% 48%; /* Ring color, often a brighter blue */
     --radius: 0.5rem;
   }
 
   .dark {
     --background: 224 71% 4%; /* Darker slate */
-    --foreground: 210 40% 98%;
+    --foreground: 210 40% 98%; /* Light gray for text */
     --card: 224 71% 4%;
     --card-foreground: 210 40% 98%;
     --popover: 224 71% 4%;
     --popover-foreground: 210 40% 98%;
-    --primary: 217.2 91.2% 59.8%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+
+    /* Primary button color - vibrant blue */
+    --primary: 217.2 91.2% 59.8%; /* hsl(217, 91%, 60%) - A good, vibrant blue */
+    --primary-foreground: 210 40% 98%; /* White/light gray text on primary buttons */
+
+    /* Secondary button color - darker, subtle */
+    --secondary: 220 13% 18%; /* hsl(220, 13%, 18%) - Dark gray/blue */
+    --secondary-foreground: 210 20% 75%; /* Lighter gray text for secondary buttons */
+
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
     --accent: 217.2 91.2% 59.8%;
     --accent-foreground: 210 40% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 22.5%; /* Slightly lighter border */
+    --border: 217.2 32.6% 22.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 224.3 76.3% 48%;
+    --ring: 217.2 91.2% 59.8%; /* Ring color matching primary blue */
   }
 }
 
@@ -55,13 +60,12 @@
   }
   body {
     @apply bg-background text-foreground;
-    /* Adding a subtle radial gradient for depth */
     background-image: radial-gradient(circle at top center, hsl(224 71% 10%) 0%, hsl(224 71% 4%) 70%);
     min-height: 100vh;
   }
 }
 
-/* Custom class for the hero gradient text */
+/* Gradient for general hero text (e.g. "Vibe Meter" if used) */
 .hero-gradient-text {
   background-image: linear-gradient(
     to right,
@@ -72,4 +76,13 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+/* Gradient specifically for the animated word in the headline */
+.animated-word-gradient {
+  background-image: linear-gradient(to right, theme("colors.sky.400") /* Brighter blue */, theme("colors.purple.500"));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold; /* Ensure it stands out */
 }
