@@ -20,7 +20,7 @@ export default function UpcomingProvidersSection() {
       </div>
 
       <div className="w-fit mx-auto mt-12 mb-12 text-center">
-        <p className="text-sm text-slate-500 whitespace-nowrap">
+        <p className="text-sm text-slate-500">
           Stay tuned for updates as we add support for services like OpenAI, Anthropic, and others!
         </p>
 
