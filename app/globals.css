@@ -90,6 +90,6 @@
 /* Mobile text size reduction for "Vibe Meter" text */
 @media (max-width: 640px) {
   .mobile-text-half {
-    font-size: 50%;
+    font-size: 25%;
   }
 }
