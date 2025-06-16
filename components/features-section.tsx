@@ -103,7 +103,7 @@ export default function FeaturesSection() {
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 hero-gradient-text">Packed with Power</h2>
         <p className="text-lg text-slate-400 text-center mb-12 md:mb-16 max-w-2xl mx-auto">
-          <span className="mobile-text-half">Vibe Meter</span> offers a suite of features designed for clarity and control over your AI spending.
+          Vibe Meter offers a suite of features designed for clarity and control over your AI spending.
         </p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {features.map((feature) => (

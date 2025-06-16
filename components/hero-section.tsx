@@ -16,7 +16,7 @@ export default function HeroSection() {
           </h1>
           <p className="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto">
             {" "}
-            {/* Added mx-auto for paragraph centering */}<span className="mobile-text-half">Vibe Meter</span> puts your AI spend on the macOS menu bar.<br />real-time, multi-currency, open-source, no surprises.
+            {/* Added mx-auto for paragraph centering */}Vibe Meter puts your AI spend on the macOS menu bar.<br />real-time, multi-currency, open-source, no surprises.
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
             {" "}

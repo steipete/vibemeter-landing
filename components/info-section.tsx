@@ -9,7 +9,7 @@ export default function InfoSection() {
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 hero-gradient-text">Stay Informed, Effortlessly.</h2>
             <p className="text-lg text-slate-300 mb-4">
-              <span className="mobile-text-half">Vibe Meter</span> provides a clear overview of your AI service provider costs, starting with Cursor AI. See your
+              Vibe Meter provides a clear overview of your AI service provider costs, starting with Cursor AI. See your
               usage and limits at a glance, directly in your menu bar.
             </p>
             <div className="mt-6 space-y-4">
