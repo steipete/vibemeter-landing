@@ -15,7 +15,7 @@ export default function Header() {
             height={32}
             className="rounded-md"
           />
-          <span className="text-xl font-semibold text-slate-100">Vibe Meter</span>
+          <span className="text-xl font-semibold text-slate-100 mobile-text-half">Vibe Meter</span>
         </Link>
         <Button variant="secondary" size="sm" asChild>
           <a

@@ -13,7 +13,7 @@ export default function UpcomingProvidersSection() {
         </div>
         <h2 className="text-3xl md:text-4xl font-bold mb-6 hero-gradient-text">More Providers Coming Soon</h2>
         <p className="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-8">
-          We're actively working to expand Vibe Meter's capabilities by integrating with more of your favorite AI
+          We're actively working to expand <span className="mobile-text-half">Vibe Meter's</span> capabilities by integrating with more of your favorite AI
           service providers. Our goal is to give you a comprehensive view of all your AI spending in one convenient
           place.
         </p>

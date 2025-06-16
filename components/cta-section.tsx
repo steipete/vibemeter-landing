@@ -18,7 +18,7 @@ export default function CallToActionSection() {
           height={80}
           className="mx-auto mb-6 rounded-2xl shadow-md"
         />
-        <h2 className="text-4xl font-bold mb-6 hero-gradient-text">Get Vibe Meter Today</h2>
+        <h2 className="text-4xl font-bold mb-6 hero-gradient-text">Get <span className="mobile-text-half">Vibe Meter</span> Today</h2>
         <p className="text-xl text-slate-300 mb-10 max-w-xl mx-auto">
           It's free, open-source, and ready to help you manage your AI expenses with ease.
         </p>

@@ -86,3 +86,10 @@
   color: transparent;
   font-weight: bold; /* Ensure it stands out */
 }
+
+/* Mobile text size reduction for "Vibe Meter" text */
+@media (max-width: 640px) {
+  .mobile-text-half {
+    font-size: 50%;
+  }
+}
