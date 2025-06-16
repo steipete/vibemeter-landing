@@ -90,6 +90,10 @@
 /* Mobile text size reduction for "Vibe Meter" text */
 @media (max-width: 640px) {
   .mobile-text-half {
-    font-size: 25%;
+    display: inline-block;
+    transform: scale(0.25);
+    transform-origin: center;
+    margin: 0 -0.375em; /* Compensate for the space taken by scaled text */
+    vertical-align: baseline;
   }
 }
